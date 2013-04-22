@@ -9,10 +9,6 @@
         <th>Phone</th>
         <th>Email</th>
         <th>Billing Address Same?</th>
-        <th>Billing address</th>
-        <th>Billing Contact Name</th>
-        <th>Billing Phone</th>
-        <th>Billing Email</th>
         <th></th>
         <th></th>
         <th></th>
@@ -20,16 +16,12 @@
 
     <% @clients.each do |client| %>
       <tr>
-        <td><%= client.clientname %></td>
+        <td><%= link_to client.clientname, client %></td>
         <td><%= client.locationaddress %></td>
         <td><%= client.contactname %></td>
         <td><%= client.contactphone %></td>
         <td><%= client.contactemail %></td>
         <td><%= client.billingaddresssame %></td>
-        <td><%= client.billingaddress %></td>
-        <td><%= client.billingcontactname %></td>
-        <td><%= client.billingphone %></td>
-        <td><%= client.billingemail %></td>
         <td><%= link_to 'Show', client %></td>
         <td><%= link_to 'Edit', edit_client_path(client) %></td>
         <td><%= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' } %></td>

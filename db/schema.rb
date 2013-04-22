@@ -11,7 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130405053523) do
+ActiveRecord::Schema.define(:version => 20130421230740) do
+
+  create_table "areas", :force => true do |t|
+    t.string   "area_name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "clients", :force => true do |t|
     t.string   "clientname"
@@ -26,6 +32,15 @@ ActiveRecord::Schema.define(:version => 20130405053523) do
     t.string   "billingemail"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
+  end
+
+  create_table "locations", :force => true do |t|
+    t.string   "location_name"
+    t.string   "location_address"
+    t.string   "location_phone"
+    t.string   "location_contact"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   create_table "users", :force => true do |t|
