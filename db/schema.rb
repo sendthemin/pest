@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130421230740) do
+ActiveRecord::Schema.define(:version => 20130423231650) do
 
   create_table "areas", :force => true do |t|
     t.string   "area_name"
@@ -37,11 +37,15 @@ ActiveRecord::Schema.define(:version => 20130421230740) do
   create_table "locations", :force => true do |t|
     t.string   "location_name"
     t.string   "location_address"
-    t.string   "location_phone"
     t.string   "location_contact"
+    t.string   "location_phone"
+    t.string   "location_email"
+    t.integer  "client_id"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end
+
+  add_index "locations", ["client_id"], :name => "index_locations_on_client_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

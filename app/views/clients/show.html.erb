@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<%= render 'locations/index' %>
+
 <p>
   <b>Client Name:</b>
   <%= @client.clientname %>
@@ -49,6 +51,9 @@
   <b>Billing Mail:</b>
   <%= @client.billingemail %>
 </p>
+
+
+<%= render 'locations/form' %>
 
 
 <%= link_to 'Edit', edit_client_path(@client) %> |
