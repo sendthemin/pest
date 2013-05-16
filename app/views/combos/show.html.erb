@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Pest:</b>
+  <%= @combo.pest %>
+</p>
+
+<p>
+  <b>Pesticide:</b>
+  <%= @combo.pesticide %>
+</p>
+
+<p>
+  <b>Application:</b>
+  <%= @combo.application %>
+</p>
+
+
+<%= link_to 'Edit', edit_combo_path(@combo) %> |
+<%= link_to 'Back', combos_path %>

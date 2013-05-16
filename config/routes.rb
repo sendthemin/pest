@@ -1,4 +1,25 @@
 Pestcloud::Application.routes.draw do
+  resources :stops
+
+
+  resources :appointments
+
+
+  resources :organizations
+
+
+  resources :combos
+
+
+  resources :pesticides
+
+
+  resources :applications
+
+
+  resources :pests
+
+
   resources :locations
 
 

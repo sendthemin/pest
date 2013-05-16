@@ -1,0 +1,27 @@
+<h1>Listing combos</h1>
+
+<table>
+  <tr>
+    <th>Pest</th>
+    <th>Pesticide</th>
+    <th>Application</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @combos.each do |combo| %>
+  <tr>
+    <td><%= combo.pest.pest_name %></td>
+    <td><%= combo.pesticide.pesticide_name %></td>
+    <td><%= combo.application.application_name %></td>
+    <td><%= link_to 'Show', combo %></td>
+    <td><%= link_to 'Edit', edit_combo_path(combo) %></td>
+    <td><%= link_to 'Destroy', combo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Combo', new_combo_path %>

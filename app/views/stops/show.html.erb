@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Appointment:</b>
+  <%= @stop.appointment %>
+</p>
+
+<p>
+  <b>Area:</b>
+  <%= @stop.area %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @stop.notes %>
+</p>
+
+<p>
+  <b>Combo:</b>
+  <%= @stop.combo %>
+</p>
+
+
+<%= link_to 'Edit', edit_stop_path(@stop) %> |
+<%= link_to 'Back', stops_path %>

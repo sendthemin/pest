@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  appointment: 
+  area: 
+  notes: MyText
+  combo: 
+
+two:
+  appointment: 
+  area: 
+  notes: MyText
+  combo: 

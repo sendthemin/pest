@@ -1,0 +1,29 @@
+<h1>Listing stops</h1>
+
+<table>
+  <tr>
+    <th>Appointment</th>
+    <th>Area</th>
+    <th>Notes</th>
+    <th>Combo</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @stops.each do |stop| %>
+  <tr>
+    <td><%= stop.appointment %></td>
+    <td><%= stop.area %></td>
+    <td><%= stop.notes %></td>
+    <td><%= stop.combo %></td>
+    <td><%= link_to 'Show', stop %></td>
+    <td><%= link_to 'Edit', edit_stop_path(stop) %></td>
+    <td><%= link_to 'Destroy', stop, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Stop', new_stop_path %>

@@ -11,7 +11,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130516005252) do
+ActiveRecord::Schema.define(:version => 20130516021717) do
+
+  create_table "applications", :force => true do |t|
+    t.string   "application_name"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
+
+  create_table "appointments", :force => true do |t|
+    t.integer  "location_id"
+    t.integer  "user_id"
+    t.date     "date"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "appointments", ["location_id"], :name => "index_appointments_on_location_id"
+  add_index "appointments", ["user_id"], :name => "index_appointments_on_user_id"
 
   create_table "areas", :force => true do |t|
     t.string   "area_name"
@@ -37,6 +54,18 @@ ActiveRecord::Schema.define(:version => 20130516005252) do
     t.datetime "updated_at",         :null => false
   end
 
+  create_table "combos", :force => true do |t|
+    t.integer  "pest_id"
+    t.integer  "pesticide_id"
+    t.integer  "application_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  add_index "combos", ["application_id"], :name => "index_combos_on_application_id"
+  add_index "combos", ["pest_id"], :name => "index_combos_on_pest_id"
+  add_index "combos", ["pesticide_id"], :name => "index_combos_on_pesticide_id"
+
   create_table "locations", :force => true do |t|
     t.string   "location_name"
     t.string   "location_address"
@@ -49,6 +78,40 @@ ActiveRecord::Schema.define(:version => 20130516005252) do
   end
 
   add_index "locations", ["client_id"], :name => "index_locations_on_client_id"
+
+  create_table "organizations", :force => true do |t|
+    t.string   "name"
+    t.text     "address"
+    t.string   "org_phone"
+    t.string   "url"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "pesticides", :force => true do |t|
+    t.string   "pesticide_name"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  create_table "pests", :force => true do |t|
+    t.string   "pest_name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "stops", :force => true do |t|
+    t.integer  "appointment_id"
+    t.integer  "area_id"
+    t.text     "notes"
+    t.integer  "combo_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  add_index "stops", ["appointment_id"], :name => "index_stops_on_appointment_id"
+  add_index "stops", ["area_id"], :name => "index_stops_on_area_id"
+  add_index "stops", ["combo_id"], :name => "index_stops_on_combo_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

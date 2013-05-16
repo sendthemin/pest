@@ -1,0 +1,14 @@
+<%= simple_form_for(@stop) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :appointment %>
+    <%= f.association :area %>
+    <%= f.input :notes %>
+    <%= f.association :combo %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
