@@ -13,8 +13,12 @@ class LocationsController < ApplicationController
   # GET /locations/1
   # GET /locations/1.json
   def show
+    @area = Area.new
     @location = Location.find(params[:id])
+    @area.location_id = @location.id
 
+    
+    @myareas = @location.areas.all
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @location }

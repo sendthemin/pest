@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<%= render 'areas/index' %>
 <p>
   <b>Location name:</b>
   <%= @location.location_name %>
@@ -29,7 +29,7 @@
   <b>Client:</b>
   <%= @location.client %>
 </p>
-
+<%= render 'areas/form' %>
 
 <%= link_to 'Edit', edit_location_path(@location) %> |
 <%= link_to 'Back', locations_path %>
