@@ -11,13 +11,7 @@ Pestcloud::Application.routes.draw do
   resources :combos
 
 
-  resources :pesticides
-
-
   resources :applications
-
-
-  resources :pests
 
 
   resources :locations

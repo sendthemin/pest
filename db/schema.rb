@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130516021717) do
+ActiveRecord::Schema.define(:version => 20130714234138) do
 
   create_table "applications", :force => true do |t|
     t.string   "application_name"
@@ -84,18 +84,6 @@ ActiveRecord::Schema.define(:version => 20130516021717) do
     t.text     "address"
     t.string   "org_phone"
     t.string   "url"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "pesticides", :force => true do |t|
-    t.string   "pesticide_name"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
-  end
-
-  create_table "pests", :force => true do |t|
-    t.string   "pest_name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

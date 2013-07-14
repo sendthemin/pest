@@ -17,7 +17,7 @@ class LocationsController < ApplicationController
     @location = Location.find(params[:id])
     @area.location_id = @location.id
 
-    
+  
     @myareas = @location.areas.all
     respond_to do |format|
       format.html # show.html.erb
