@@ -9,6 +9,7 @@
     <th>EPA Registration</th>
     <th>Signal</th>
     <th>Restricted Use</th>
+    <th>Label URL</th>
     <th></th>
     <th></th>
     <th></th>
@@ -23,6 +24,7 @@
     <td><%= pesticide.epa_registration %></td>
     <td><%= pesticide.signal %></td>
     <td><%= pesticide.restricted_use %></td>
+    <td><%= pesticide.label_url %></td>
     <td><%= link_to 'Show', pesticide %></td>
     <td><%= link_to 'Edit', edit_pesticide_path(pesticide) %></td>
     <td><%= link_to 'Destroy', pesticide, method: :delete, data: { confirm: 'Are you sure?' } %></td>
