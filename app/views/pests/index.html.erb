@@ -1,0 +1,29 @@
+<h1>Listing pests</h1>
+
+<table>
+  <tr>
+    <th>Common name</th>
+    <th>Scientific name</th>
+    <th>Invertebrate</th>
+    <th>Family</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pests.each do |pest| %>
+  <tr>
+    <td><%= pest.common_name %></td>
+    <td><%= pest.scientific_name %></td>
+    <td><%= pest.invertebrate %></td>
+    <td><%= pest.family %></td>
+    <td><%= link_to 'Show', pest %></td>
+    <td><%= link_to 'Edit', edit_pest_path(pest) %></td>
+    <td><%= link_to 'Destroy', pest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pest', new_pest_path %>

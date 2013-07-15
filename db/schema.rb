@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130714234138) do
+ActiveRecord::Schema.define(:version => 20130715001814) do
 
   create_table "applications", :force => true do |t|
     t.string   "application_name"
@@ -86,6 +86,15 @@ ActiveRecord::Schema.define(:version => 20130714234138) do
     t.string   "url"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "pests", :force => true do |t|
+    t.string   "common_name"
+    t.string   "scientific_name"
+    t.boolean  "invertebrate"
+    t.string   "family"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "stops", :force => true do |t|

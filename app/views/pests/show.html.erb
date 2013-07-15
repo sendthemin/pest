@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Common name:</b>
+  <%= @pest.common_name %>
+</p>
+
+<p>
+  <b>Scientific name:</b>
+  <%= @pest.scientific_name %>
+</p>
+
+<p>
+  <b>Invertebrate:</b>
+  <%= @pest.invertebrate %>
+</p>
+
+<p>
+  <b>Family:</b>
+  <%= @pest.family %>
+</p>
+
+
+<%= link_to 'Edit', edit_pest_path(@pest) %> |
+<%= link_to 'Back', pests_path %>

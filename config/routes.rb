@@ -1,4 +1,7 @@
 Pestcloud::Application.routes.draw do
+  resources :pests
+
+
   resources :stops
 
 
