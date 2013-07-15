@@ -1,0 +1,35 @@
+<h1>Listing treatments</h1>
+
+<table>
+  <tr>
+    <th>Worksheet</th>
+    <th>Pest</th>
+    <th>Pesticide</th>
+    <th>Amount</th>
+    <th>Unit</th>
+    <th>Method</th>
+    <th>Equipment</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @treatments.each do |treatment| %>
+  <tr>
+    <td><%= treatment.worksheet %></td>
+    <td><%= treatment.pest %></td>
+    <td><%= treatment.pesticide %></td>
+    <td><%= treatment.amount %></td>
+    <td><%= treatment.unit %></td>
+    <td><%= treatment.method %></td>
+    <td><%= treatment.equipment %></td>
+    <td><%= link_to 'Show', treatment %></td>
+    <td><%= link_to 'Edit', edit_treatment_path(treatment) %></td>
+    <td><%= link_to 'Destroy', treatment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Treatment', new_treatment_path %>

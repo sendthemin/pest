@@ -1,0 +1,17 @@
+<%= simple_form_for(@treatment) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :worksheet %>
+    <%= f.association :pest %>
+    <%= f.association :pesticide %>
+    <%= f.input :amount %>
+    <%= f.input :unit %>
+    <%= f.input :method %>
+    <%= f.association :equipment %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

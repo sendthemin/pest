@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Worksheet:</b>
+  <%= @treatment.worksheet %>
+</p>
+
+<p>
+  <b>Pest:</b>
+  <%= @treatment.pest %>
+</p>
+
+<p>
+  <b>Pesticide:</b>
+  <%= @treatment.pesticide %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @treatment.amount %>
+</p>
+
+<p>
+  <b>Unit:</b>
+  <%= @treatment.unit %>
+</p>
+
+<p>
+  <b>Method:</b>
+  <%= @treatment.method %>
+</p>
+
+<p>
+  <b>Equipment:</b>
+  <%= @treatment.equipment %>
+</p>
+
+
+<%= link_to 'Edit', edit_treatment_path(@treatment) %> |
+<%= link_to 'Back', treatments_path %>

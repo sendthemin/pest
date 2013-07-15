@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  area: 
+  pest_comment: MyText
+  sanitation_comment: MyText
+  pestcontrol_comment: MyText
+
+two:
+  area: 
+  pest_comment: MyText
+  sanitation_comment: MyText
+  pestcontrol_comment: MyText
