@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Area:</b>
+  <%= @worksheet.area %>
+</p>
+
+<p>
+  <b>Pest comment:</b>
+  <%= @worksheet.pest_comment %>
+</p>
+
+<p>
+  <b>Sanitation comment:</b>
+  <%= @worksheet.sanitation_comment %>
+</p>
+
+<p>
+  <b>Pestcontrol comment:</b>
+  <%= @worksheet.pestcontrol_comment %>
+</p>
+
+
+<%= link_to 'Edit', edit_worksheet_path(@worksheet) %> |
+<%= link_to 'Back', worksheets_path %>

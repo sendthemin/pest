@@ -1,0 +1,14 @@
+<%= simple_form_for(@worksheet) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :area %>
+    <%= f.input :pest_comment %>
+    <%= f.input :sanitation_comment %>
+    <%= f.input :pestcontrol_comment %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

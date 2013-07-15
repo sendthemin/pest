@@ -1,4 +1,10 @@
 Pestcloud::Application.routes.draw do
+  resources :treatments
+
+
+  resources :worksheets
+
+
   resources :pesticides
 
 

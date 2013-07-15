@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  worksheet: 
+  pest: 
+  pesticide: 
+  amount: 1
+  unit: MyString
+  method: MyString
+  equipment: 
+
+two:
+  worksheet: 
+  pest: 
+  pesticide: 
+  amount: 1
+  unit: MyString
+  method: MyString
+  equipment: 
