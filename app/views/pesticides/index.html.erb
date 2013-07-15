@@ -1,0 +1,35 @@
+<h1>Listing pesticides</h1>
+
+<table>
+  <tr>
+    <th>Common name</th>
+    <th>Scientific name</th>
+    <th>Active ingredient</th>
+    <th>Formulation</th>
+    <th>Epa registration</th>
+    <th>Signal</th>
+    <th>Restricted use</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pesticides.each do |pesticide| %>
+  <tr>
+    <td><%= pesticide.common_name %></td>
+    <td><%= pesticide.scientific_name %></td>
+    <td><%= pesticide.active_ingredient %></td>
+    <td><%= pesticide.formulation %></td>
+    <td><%= pesticide.epa_registration %></td>
+    <td><%= pesticide.signal %></td>
+    <td><%= pesticide.restricted_use %></td>
+    <td><%= link_to 'Show', pesticide %></td>
+    <td><%= link_to 'Edit', edit_pesticide_path(pesticide) %></td>
+    <td><%= link_to 'Destroy', pesticide, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pesticide', new_pesticide_path %>

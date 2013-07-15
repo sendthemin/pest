@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  common_name: MyString
+  scientific_name: MyString
+  active_ingredient: MyString
+  formulation: MyString
+  epa_registration: MyString
+  signal: MyString
+  restricted_use: false
+
+two:
+  common_name: MyString
+  scientific_name: MyString
+  active_ingredient: MyString
+  formulation: MyString
+  epa_registration: MyString
+  signal: MyString
+  restricted_use: false

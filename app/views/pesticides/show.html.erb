@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Common name:</b>
+  <%= @pesticide.common_name %>
+</p>
+
+<p>
+  <b>Scientific name:</b>
+  <%= @pesticide.scientific_name %>
+</p>
+
+<p>
+  <b>Active ingredient:</b>
+  <%= @pesticide.active_ingredient %>
+</p>
+
+<p>
+  <b>Formulation:</b>
+  <%= @pesticide.formulation %>
+</p>
+
+<p>
+  <b>Epa registration:</b>
+  <%= @pesticide.epa_registration %>
+</p>
+
+<p>
+  <b>Signal:</b>
+  <%= @pesticide.signal %>
+</p>
+
+<p>
+  <b>Restricted use:</b>
+  <%= @pesticide.restricted_use %>
+</p>
+
+
+<%= link_to 'Edit', edit_pesticide_path(@pesticide) %> |
+<%= link_to 'Back', pesticides_path %>

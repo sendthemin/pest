@@ -1,0 +1,17 @@
+<%= simple_form_for(@pesticide) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :common_name %>
+    <%= f.input :scientific_name %>
+    <%= f.input :active_ingredient %>
+    <%= f.input :formulation %>
+    <%= f.input :epa_registration %>
+    <%= f.input :signal %>
+    <%= f.input :restricted_use %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
