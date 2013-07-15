@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130715002923) do
+ActiveRecord::Schema.define(:version => 20130715004250) do
 
   create_table "applications", :force => true do |t|
     t.string   "application_name"
@@ -98,6 +98,7 @@ ActiveRecord::Schema.define(:version => 20130715002923) do
     t.boolean  "restricted_use"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
+    t.string   "label_url"
   end
 
   create_table "pests", :force => true do |t|
