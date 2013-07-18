@@ -8,6 +8,8 @@ class CreatePesticides < ActiveRecord::Migration
       t.string :epa_registration
       t.string :signal
       t.boolean :restricted_use
+      t.string :label_url
+      t.float :dilution_rate
 
       t.timestamps
     end

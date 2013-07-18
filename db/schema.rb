@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130715004250) do
+ActiveRecord::Schema.define(:version => 20130718004311) do
 
   create_table "applications", :force => true do |t|
     t.string   "application_name"
@@ -99,6 +99,7 @@ ActiveRecord::Schema.define(:version => 20130715004250) do
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
     t.string   "label_url"
+    t.float    "dilution_rate"
   end
 
   create_table "pests", :force => true do |t|
