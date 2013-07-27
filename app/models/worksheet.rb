@@ -1,4 +1,10 @@
 class Worksheet < ActiveRecord::Base
+	belongs_to :appointment
   belongs_to :area
-  attr_accessible :pest_comment, :pestcontrol_comment, :sanitation_comment
+  belongs_to :location
+  belongs_to :user
+  belongs_to :client
+  belongs_to :organization
+  has_many :treatments
+  attr_accessible :pestcontrol_comment, :sanitation_comment, :area_id, :appointment_id
 end

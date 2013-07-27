@@ -3,6 +3,7 @@ class Location < ActiveRecord::Base
   belongs_to :organization
   has_many :areas
   has_many :appointments
-  has_many :stops, :through => :appointments
-  attr_accessible :location_address, :location_contact, :location_email, :location_name, :location_phone, :client_id
+  has_many :worksheets, :through => :appointments
+  has_many :treatments, :through => :worksheets
+  attr_accessible :address, :comments, :contact, :email, :name, :phone, :client_id, :city, :state, :zipcode
 end

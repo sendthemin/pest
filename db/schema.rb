@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(:version => 20130718004311) do
     t.integer  "location_id"
     t.integer  "user_id"
     t.date     "date"
+    t.text     "comments"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
@@ -41,14 +42,19 @@ ActiveRecord::Schema.define(:version => 20130718004311) do
 
   create_table "clients", :force => true do |t|
     t.string   "clientname"
-    t.text     "locationaddress"
     t.string   "contactname"
     t.string   "contactphone"
     t.string   "contactemail"
-    t.boolean  "billingaddresssame"
     t.text     "billingaddress"
-    t.string   "billingcontactname"
+    t.string   "billingcity"
+    t.string   "billingzipcode"
+    t.string   "billingstate"
+    t.text     "contactaddress"
+    t.string   "contactcity"
+    t.string   "contactzipcode"
+    t.string   "contactstate"
     t.string   "billingphone"
+    t.string   "billingname"    
     t.string   "billingemail"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
@@ -67,11 +73,15 @@ ActiveRecord::Schema.define(:version => 20130718004311) do
   add_index "combos", ["pesticide_id"], :name => "index_combos_on_pesticide_id"
 
   create_table "locations", :force => true do |t|
-    t.string   "location_name"
-    t.string   "location_address"
-    t.string   "location_contact"
-    t.string   "location_phone"
-    t.string   "location_email"
+    t.string   "name"
+    t.string   "address"
+    t.string   "contact"
+    t.string   "phone"
+    t.string   "email"
+    t.text     "comments"
+    t.string   "zipcode"
+    t.string   "state"
+    t.string   "city"
     t.integer  "client_id"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
@@ -111,25 +121,13 @@ ActiveRecord::Schema.define(:version => 20130718004311) do
     t.datetime "updated_at",      :null => false
   end
 
-  create_table "stops", :force => true do |t|
-    t.integer  "appointment_id"
-    t.integer  "area_id"
-    t.text     "notes"
-    t.integer  "combo_id"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
-  end
-
-  add_index "stops", ["appointment_id"], :name => "index_stops_on_appointment_id"
-  add_index "stops", ["area_id"], :name => "index_stops_on_area_id"
-  add_index "stops", ["combo_id"], :name => "index_stops_on_combo_id"
-
   create_table "treatments", :force => true do |t|
     t.integer  "worksheet_id"
     t.integer  "pest_id"
     t.integer  "pesticide_id"
     t.integer  "amount"
     t.string   "unit"
+    t.text     "comments"
     t.string   "method"
     t.integer  "equipment_id"
     t.datetime "created_at",   :null => false
