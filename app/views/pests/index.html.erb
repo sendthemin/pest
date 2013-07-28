@@ -13,10 +13,10 @@
 
 <% @pests.each do |pest| %>
   <tr>
-    <td><%= pest.common_name %></td>
+    <td><%= pest.name %></td>
     <td><%= pest.scientific_name %></td>
-    <td><%= pest.invertebrate %></td>
-    <td><%= pest.family %></td>
+    <td><%= pest.typep %></td>
+    <td><%= pest.category %></td>
     <td><%= link_to 'Show', pest %></td>
     <td><%= link_to 'Edit', edit_pest_path(pest) %></td>
     <td><%= link_to 'Destroy', pest, method: :delete, data: { confirm: 'Are you sure?' } %></td>

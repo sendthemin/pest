@@ -122,7 +122,7 @@ ActiveRecord::Schema.define(:version => 20130718004311) do
   create_table "pests", :force => true do |t|
     t.string   "name"
     t.string   "scientific_name"
-    t.string   "type"
+    t.string   "typep"
     t.string   "category"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false

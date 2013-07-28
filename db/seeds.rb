@@ -118,817 +118,817 @@ end
 Pest.create(
 [
   {
-    type: "bird",
+    typep: "bird",
     category: "Birds",
     name: "bird"
   },
   {
-    type: "vertebrate",
+    typep: "vertebrate",
     category: "Bats",
     name: "bat"
   },
   {
-    type: "vertebrate",
+    typep: "vertebrate",
     category: "Humans",
     name: "human"
   },
   {
-    type: "vertebrate",
+    typep: "vertebrate",
     category: "Rodents",
     name: "rodent"
   },
   {
-    type: "vertebrate",
+    typep: "vertebrate",
     category: "moles",
     name: "mole"
   },
   {
-    type: "vertebrate",
+    typep: "vertebrate",
     category: "voles",
     name: "vole"
   },
   {
-    type: "vertebrate",
+    typep: "vertebrate",
     category: "Squirrels",
     name: "squirrel"
   },
   {
-    type: "vertebrate",
+    typep: "vertebrate",
     category: "mice",
     name: "house mouse"
   },
   {
-    type: "vertebrate",
+    typep: "vertebrate",
     category: "mice",
     name: "field mouse"
   },
   {
-    type: "vertebrate",
+    typep: "vertebrate",
     category: "mice",
     name: "deer mouse"
   },
   {
-    type: "vertebrate",
+    typep: "vertebrate",
     category: "Rats",
     name: "norwegian rat"
   },
   {
-    type: "vertebrate",
+    typep: "vertebrate",
     category: "Rats",
     name: "roof rat"
   },
   {
-    type: "vertebrate",
+    typep: "vertebrate",
     category: "Dogs",
     name: "dog"
   },
   {
-    type: "vertebrate",
+    typep: "vertebrate",
     category: "Cats",
     name: "cat"
   },
   {
-    type: "vertebrate",
+    typep: "vertebrate",
     category: "raccoons",
     name: "raccoon"
   },
   {
-    type: "vertebrate",
+    typep: "vertebrate",
     category: "oppossium",
     name: "oppossum"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "two body sements",
     name: "spiders "
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "two body sements",
     name: "mittes"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "two body sements",
     name: "ticks"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "two body sements",
     name: "scorpions"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "two body sements",
     name: "granddaddy longlegs"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Sowbugs",
     name: "Sowbugs"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "crayfish",
     name: "crayfish"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "lobsters",
     name: "lobsters"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "crabs",
     name: "crabs"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "centipedes",
     name: "many-segmented with one pair of legs per sgement"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "millipedes",
     name: "many body segments with two pair of legs per segment"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "three body segments",
     name: "three body segments"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Bristletails",
     name: "Bristletails"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "firebrats",
     name: "firebrats"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "silverfish",
     name: "silverfish"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Springtails",
     name: "Springtails"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "grasshoppers",
     name: "grasshoppers"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "crickets",
     name: "crickets"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "cockroaches",
     name: "German"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "cockroaches",
     name: "Brown banded"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "cockroaches",
     name: "Oriental "
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "cockroaches",
     name: "American "
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "cockroaches",
     name: "austrialian "
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "cockroaches",
     name: "Wood "
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "cockroaches",
     name: "smokey Brown"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Termites",
     name: "Termites"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "psocids",
     name: "psocids"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "booklice",
     name: "booklice"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "chewing lice",
     name: "chewing lice"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "bird lice",
     name: "bird lice"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Sucking lice",
     name: "Sucking lice"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "head lice",
     name: "head lice"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Body lice",
     name: "Body lice"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Pubic lice",
     name: "Pubic lice"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Bugs",
     name: "Bugs"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Bed bugs",
     name: "Bed bugs"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Stink bugs",
     name: "Stink bugs"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Eastern Pine Bug",
     name: "Eastern Pine Bug"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Chinch bug",
     name: "Chinch bug"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Box Elder bug",
     name: "Box Elder bug"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "cicada",
     name: "cicada"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Hoppers",
     name: "Hoppers"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Psyllids",
     name: "Psyllids"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Whiteflies",
     name: "Whiteflies"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Aphids",
     name: "Aphids"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Scale insects",
     name: "Scale insects"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Earwigs",
     name: "Earwigs"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Stored product"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Fabric "
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Black carpet"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Carpet "
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "confused Flour"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Drugstore"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Elm leaaf"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "False powder-post"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Flat-grain"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Flatheaded wood boring"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Furinture"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Deadwatch"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Fround"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Hide"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Incinerator"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "June"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Khapra"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Lafy"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Larder"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Large cabinet"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Longhorned"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Museum"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Powder post"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Red-flour"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Saw-toothed grain"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Timber"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Varied carpet"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Beetles"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Beetles",
     name: "Beetles"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Butterflies",
     name: "Butterflies"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Moths",
     name: "Moths"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Moths",
     name: "webbing clothes"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Moths",
     name: "casemaking "
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Moths",
     name: "Indian meal "
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Moths",
     name: "Angoumois gain"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Moths",
     name: "Clothes "
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Moths",
     name: "Indian meal "
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Moths",
     name: "Mediterranean flour"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Moths",
     name: "Tapestry"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "flies",
     name: "Black Flies"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "flies",
     name: "Blowflies"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "flies",
     name: "Bottle flies"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "flies",
     name: "Cluster fly"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "flies",
     name: "Deer flies"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "flies",
     name: "Flesh flies"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "flies",
     name: "Fruit flies"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "flies",
     name: "gnats"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "flies",
     name: "Horse flies"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "flies",
     name: "House fly"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "flies",
     name: "midges"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "flies",
     name: "mosquitoes"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "flies",
     name: "Moth flies"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "flies",
     name: "no-see-ums"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "flies",
     name: "punkies"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "flies",
     name: "sand flies"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "flies",
     name: "stable flies"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Crane fly",
     name: "Crane fly"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Mosquitoes",
     name: "Salt- water"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Mosquitoes",
     name: "Black salt-water"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Mosquitoes",
     name: "common Malaria"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Mosquitoes",
     name: "Western malaria"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Mosquitoes",
     name: "punctipennis"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Mosquitoes",
     name: "Northern house"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Mosquitoes",
     name: "Yellow-fever"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Mosquitoes",
     name: "Common tree hole"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Lovebugs",
     name: "Lovebugs"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "fleas",
     name: "Cat"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "fleas",
     name: "Dog"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "fleas",
     name: "Human"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Honey Bees",
     name: "Honey Bees"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Yellow Jackets",
     name: "Yellow Jackets"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Bald Faced Hornets",
     name: "Bald Faced Hornets"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "paperwasps",
     name: "paperwasps"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Carpenter Bees",
     name: "Carpenter Bees"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Mud-dabbers",
     name: "Mud-dabbers"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "ants",
     name: "Acrobat"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "ants",
     name: "Argentine"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "ants",
     name: "Carpenter"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "ants",
     name: "citronella"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "ants",
     name: "cornfield"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "ants",
     name: "crazy"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "ants",
     name: "honey"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "ants",
     name: "Imported fire "
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "ants",
     name: "Little Black Ant"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "ants",
     name: "Odorous"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "ants",
     name: "pavement"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "ants",
     name: "Pharoh's"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "ants",
     name: "silk"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "ants",
     name: "Thief "
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "ants",
     name: "ants"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Alderflies",
     name: "Alderflies"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Dobsonflies",
     name: "Dobsonflies"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Fishflies",
     name: "Fishflies"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Snakeflies",
     name: "Snakeflies"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Lacewings",
     name: "Lacewings"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Antlions",
     name: "Antlions"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Owlflies",
     name: "Owlflies"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Twisted-winged Parasites",
     name: "Twisted-winged Parasites"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Scorpionflies",
     name: "Scorpionflies"
   },
   {
-    type: "invertebrate",
+    typep: "invertebrate",
     category: "Caddisflies",
     name: "Caddisflies"
   }
