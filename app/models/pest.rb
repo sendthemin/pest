@@ -1,3 +1,3 @@
 class Pest < ActiveRecord::Base
-  attr_accessible :common_name, :family, :invertebrate, :scientific_name
+  attr_accessible :name, :category, :type, :scientific_name
 end

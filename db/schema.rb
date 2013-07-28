@@ -106,7 +106,7 @@ ActiveRecord::Schema.define(:version => 20130718004311) do
   end
 
   create_table "pesticides", :force => true do |t|
-    t.string   "common_name"
+    t.string   "name"
     t.string   "scientific_name"
     t.string   "active_ingredient"
     t.string   "formulation"
@@ -120,10 +120,10 @@ ActiveRecord::Schema.define(:version => 20130718004311) do
   end
 
   create_table "pests", :force => true do |t|
-    t.string   "common_name"
+    t.string   "name"
     t.string   "scientific_name"
-    t.boolean  "invertebrate"
-    t.string   "family"
+    t.string   "type"
+    t.string   "category"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
   end
