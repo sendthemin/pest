@@ -2,9 +2,9 @@
 
 <%= render 'locations/index' %>
 
-<!-- <p>
+<p>
   <b>Client Name:</b>
-  <%= @client.clientname %>
+  <%= @client.name %>
 </p>
 
 <p>
@@ -50,10 +50,10 @@
 <p>
   <b>Billing Mail:</b>
   <%= @client.billingemail %>
-</p> -->
+</p>
 
-
-<%= render 'locations/form' %>
+<!--
+<%= render 'locations/form' %> -->
 
 
 <%= link_to 'Edit', edit_client_path(@client) %> |

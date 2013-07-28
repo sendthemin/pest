@@ -39,6 +39,8 @@ Pestcloud::Application.routes.draw do
 
  get 'accounts' => 'pages#accounts'
 
+ get 'company' => 'organizations#show'
+
  root :to => 'pages#home'
 
   # The priority is based upon order of creation:

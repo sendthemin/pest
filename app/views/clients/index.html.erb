@@ -4,11 +4,11 @@
     <table class="table-striped table-bordered table-hover">
       <tr>
         <th>Business Name</th>
-        <th>Location Address</th>
+  
         <th>Name</th>
         <th>Phone</th>
         <th>Email</th>
-        <th>Billing Address Same?</th>
+
         <th></th>
         <th></th>
         <th></th>
@@ -16,12 +16,12 @@
 
     <% @clients.each do |client| %>
       <tr>
-        <td><%= link_to client.clientname, client %></td>
-        <td><%= client.locationaddress %></td>
+        <td><%= link_to client.name, client %></td>
+
         <td><%= client.contactname %></td>
         <td><%= client.contactphone %></td>
         <td><%= client.contactemail %></td>
-        <td><%= client.billingaddresssame %></td>
+
         <td><%= link_to 'Show', client %></td>
         <td><%= link_to 'Edit', edit_client_path(client) %></td>
         <td><%= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' } %></td>

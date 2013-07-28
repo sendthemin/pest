@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(:version => 20130718004311) do
   add_index "appointments", ["user_id"], :name => "index_appointments_on_user_id"
 
   create_table "areas", :force => true do |t|
-    t.string   "area_name"
+    t.string   "name"
     t.integer  "location_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
@@ -41,7 +41,8 @@ ActiveRecord::Schema.define(:version => 20130718004311) do
   add_index "areas", ["location_id"], :name => "index_areas_on_location_id"
 
   create_table "clients", :force => true do |t|
-    t.string   "clientname"
+    t.string   "name"
+    t.integer  "organization_id"
     t.string   "contactname"
     t.string   "contactphone"
     t.string   "contactemail"
@@ -59,6 +60,8 @@ ActiveRecord::Schema.define(:version => 20130718004311) do
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
   end
+
+  add_index "clients", ["organization_id"], :name => "index_clients_on_organization_id"
 
   create_table "combos", :force => true do |t|
     t.integer  "pest_id"
@@ -96,6 +99,10 @@ ActiveRecord::Schema.define(:version => 20130718004311) do
     t.string   "url"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "city"
+    t.string   "state"
+    t.string   "zipcode"
+    t.string   "type"
   end
 
   create_table "pesticides", :force => true do |t|
@@ -153,10 +160,13 @@ ActiveRecord::Schema.define(:version => 20130718004311) do
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
     t.string   "name"
+    t.integer  "organization_id"
+    t.string   "role"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+  add_index "users", ["organization_id"], :name => "index_users_on_organization_id"
 
   create_table "worksheets", :force => true do |t|
     t.integer  "area_id"

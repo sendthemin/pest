@@ -27,6 +27,7 @@
                               
                                 <li><%= link_to "Add +", new_client_path %></li>
                                 <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
+                                <li><%= link_to "My Organization", '/company' %></li>
                                 <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
                               <% else %>
                             <li class="pull-right"><%= link_to "Login", new_user_session_path %></li>
